@@ -5,14 +5,44 @@
   flex-direction: row;
   justify-content: space-between;
 
+  background-color: rgb(253, 237, 93);
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(37, 37, 37);
-  background-color: rgb(20, 20, 20);
   z-index: 100;
+}
+
+.link-general {
+  text-decoration: none;
+  color: white;
+}
+
+.link-general:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.right-section {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  margin-right: 48px;
+}
+
+.left-section {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  margin-left: 48px;
+}
+
+.rs-text, .ls-text {
+  margin: 0;
+
+  font-family: Raleway;
+  font-size: 24px;
+  cursor: pointer;
 }

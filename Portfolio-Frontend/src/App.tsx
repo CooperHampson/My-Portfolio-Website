@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router';
-import { HomePage } from './pages/Home/HomePage';
 import { Header } from './components/Header';
+import { HomePage } from './pages/Home/HomePage';
 import './App.css';
+
 
 function App() {
 

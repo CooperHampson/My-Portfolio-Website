@@ -1,0 +1,28 @@
+.projects-section {
+  width: 100%;
+
+  margin-top: 124px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-rows: 1fr;
+
+  justify-items: center;
+
+  width: 100%;
+}
+
+.projects-title {
+  font-family: Raleway;
+  color: gray;
+  font-size: 26px;
+  font-weight: bold;
+
+  text-align: center;
+
+  max-width: 500px;
+
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
