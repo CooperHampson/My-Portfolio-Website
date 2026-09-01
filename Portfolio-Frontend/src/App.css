@@ -1,6 +1,10 @@
 body {
-  background-color: rgb(253, 237, 93);
+  background-color: var(--site-colour);
   margin: 0;
 
   overflow-x: hidden;
+}
+
+:root {
+  --site-colour: #fded5d;
 }
