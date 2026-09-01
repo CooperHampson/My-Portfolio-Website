@@ -1,3 +1,6 @@
 body {
   background-color: rgb(253, 237, 93);
+  margin: 0;
+
+  overflow-x: hidden;
 }

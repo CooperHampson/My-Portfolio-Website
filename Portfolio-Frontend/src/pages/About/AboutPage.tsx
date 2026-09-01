@@ -1,16 +1,17 @@
+import { ObservedParagraph } from './AboutPageAnim';
 import './AboutPage.css';
 
-export function AboutPage() {
+export const AboutPage: React.FC = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <p className="about-title">About Me</p>
+        <ObservedParagraph className="about-title">About Me</ObservedParagraph>
 
-        <p className="about-text">My name is Cooper Hampson, and I am a Freelance Web Designer and Developer based in Kyoto, Japan.</p>
+        <ObservedParagraph>Hi! I'm Cooper Hampson, a Freelance Web Designer and Developer based in Kyoto, Japan.</ObservedParagraph>
 
-        <p className="about-text">I have a passion for designing and developing - finding solutions for all sorts of day to day problems.</p>
+        <ObservedParagraph>I have a passion for designing and developing - finding solutions for all sorts of day to day problems.</ObservedParagraph>
 
-        <p className="about-text">My work focuses in on key visuals built with perfect functionality. I strive to build exactly to client dreams.</p>
+        <ObservedParagraph>My work focuses in on key visuals built with perfect functionality. I strive to build exactly to client dreams.</ObservedParagraph>
       </div>
     </section>
   );

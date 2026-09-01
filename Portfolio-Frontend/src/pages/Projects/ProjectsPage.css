@@ -2,6 +2,8 @@
   width: 100%;
 
   margin-top: 124px;
+
+  scroll-margin-top: 100px;
 }
 
 .projects-container {
@@ -25,4 +27,125 @@
 
   margin: 0 auto;
   margin-bottom: 24px;
+
+  transition: opacity 0.7s ease-in-out;
+  opacity: 1;
+}
+
+.projects-title.is-loading, .test-project.is-loading {
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+.projects-title.is-hidden, .test-project.is-hidden {
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-rows: auto;
+
+  max-width: 1100px;
+}
+
+@media (max-width: 1300px) {
+  .projects-grid {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .projects-grid {
+    max-width: 1400px;
+  }
+}
+
+.test-project {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+
+  rotate: 0deg;
+  opacity: 1;
+
+  transition:
+    background-color 0.25s ease,
+    border-radius 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    rotate 0.25s ease-in-out,
+    opacity 0.7s ease-in-out;
+
+  background-color: rgb(253, 237, 93);
+
+  border: 1px solid gray;
+  border-radius: 16px;
+}
+
+@media (max-width: 1300px) {
+  .test-project {
+    grid-template-columns: 1fr 500px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .test-project {
+    grid-template-columns: 1fr 800px;
+  }
+}
+
+.test-project:hover {
+  background-color: rgba(185, 176, 95, 0.8);
+  transform: scale(1.03);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+
+  rotate: -3deg;
+  cursor: pointer;
+}
+
+.test-text-container {
+  display: grid;
+  grid-template-rows: 72px 1fr;
+
+  align-items: center;
+}
+
+.test-title {
+  font-family: Raleway;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+
+  margin: 0;
+  margin-top: 16px;
+  margin-left: 16px;
+
+  border-bottom: 2px solid white;
+}
+
+.test-proj-desc {
+  font-family: Raleway;
+  font-size: 22px;
+  color: rgb(66, 66, 66);
+
+  margin: 0;
+  margin-left: 16px;
+}
+
+.test-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border: 2px solid gray;
+  border-radius: 12px;
+  margin: 16px;
 }

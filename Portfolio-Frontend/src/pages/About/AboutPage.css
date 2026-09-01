@@ -1,5 +1,7 @@
 .about-section {
   width: 100%;
+
+  scroll-margin-top: 100px;
 }
 
 .about-container {
@@ -24,6 +26,9 @@
   max-width: 500px;
 
   margin: 0;
+
+  transition: opacity 0.7s ease-in-out;
+  opacity: 1;
 }
 
 .about-text{
@@ -36,6 +41,28 @@
   color: white;
   text-align: center;
   max-width: 500px;
+
+  transition: opacity 0.7s ease-in-out;
+  opacity: 1;
+}
+
+.about-text.is-loading, .about-title.is-loading {
+  animation: slideUp 1s ease-out forwards;
+}
+
+.about-text.is-hidden, .about-title.is-hidden {
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 750px) {
